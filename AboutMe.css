@@ -175,11 +175,11 @@ body{
     background: transparent;
     transition: 3s;
 }
-/*.ABT-imghover:hover{
+.ABT-imghover:hover{
     background: #081b29;
     opacity: .8;
     cursor: pointer;
-}*/
+}
 
 
                 /* TRANSITION */
