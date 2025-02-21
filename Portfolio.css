@@ -193,11 +193,11 @@ body{
     background: transparent;
     transition: 3s;
 }
-/*.home-imghover:hover {
+.home-imghover:hover {
     background: #081b29;
     opacity: .8;
     cursor: pointer;
-}*/
+}
 
 
 
