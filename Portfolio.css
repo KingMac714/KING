@@ -22,12 +22,13 @@ body{
     width: 100%;
     height: 10%;
     padding: 20px 10%;
-    background: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+  
 }
+
 
 .logo {
     font-size: 25px;
@@ -42,7 +43,6 @@ body{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
     animation: showRight 3s ease forwards;
     animation-delay: 0.5s;
 }
@@ -64,78 +64,51 @@ body{
 
                 /*  HOME  */
 
-.home{
-    background: url('./Kinggg.jpg') no-repeat;
-    background-position: 800px;
+.Port{
+    background-position: 100px;
     background-size: 35%;
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 10%; 
 }
-.home-content h1::before {
+.Port-content h1::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
     animation: showRight 3s ease forwards;
     animation-delay: 0.5s;
 }
 
-.home-content{
+.Port-content{
     max-width: 600px;
+    position: fixed;
+    margin-left:390px;
+    margin-top: -200px;
 }
 
-.home-content p{
-    margin: 20px 0 40px;
-    font-size: 16px;
-}
-
-.home-content h1{
-    font-size: 50px;
-    font-weight: 700;
-    margin: 0 0 20px;
-    line-height: 1;
-
-}
-
-.home-content h3{
-    font-size: 30px;
-    color: rgb(66, 230, 239);
-}
-
-.home-content .btn-box{
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
-.btn:hover{
-    animation: glow 2s infinite;
-}
-
-.btn-box a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background-color: none;
-    border: 2px solid;
-    border-radius: 20px;
+.Port-content a,p{
+    margin-bottom: 15px;
+    margin-top: 10px;
     font-size: 20px;
     color: #ededed;
+    text-align: center;
     text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
+
 }
-.btn-box a:nth-child(1){
-    background-color: rgb(66, 230, 239);
-    color: #081b29;
+
+
+h1{
+    font-size: 35px;
+    color: rgb(66, 230, 239);
+    position: relative;
+
+    
 }
+
 
             /* ICONS */
 
@@ -144,7 +117,7 @@ body{
     bottom: 10px;
     width: 50%;
     display: flex;
-    background: #081b29;
+
     justify-content: center;
 }
 .icons a::before {
@@ -154,21 +127,25 @@ body{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+
     animation: showRight 3s ease forwards;
     animation-delay: 0.5s;
 }
+
+        /* Contact me hanggang LI icon */
 .icons a {
     position: relative;
     width: 40px;
     height: 40px;
-    background: #081b29;
+
     border-radius: 45%;
     font-size: 20px;
     color: rgb(66, 230, 239);
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 40px;
 }
+
+        /*CONTACT ME */
 .icons a:nth-child(1){
     color: #ededed;
     align-content: center;
@@ -193,6 +170,7 @@ body{
     background: transparent;
     transition: 3s;
 }
+
 .home-imghover:hover {
     background: #081b29;
     opacity: .8;
@@ -207,6 +185,15 @@ body{
 @keyframes glow{
     50%{box-shadow: 0px 0px 20px rgb(66, 230, 239);}
 }
+@keyframes colorChange{
+    0%{background-color: #081b29}
+    20%{background-color:#0e3049}
+    40%{background-color:#15476c}
+    60%{background-color:#1c5c8d}
+    80%{background-color:#267dc0}
+    100%{background-color:#2e97e7}
+}
+
 @keyframes grow{
     50%{transform: scale(1.15, 1.15);}
 }
